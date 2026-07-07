@@ -1,0 +1,35 @@
+{
+  "name": "whocan",
+  "version": "1.0.0",
+  "description": "A lightweight contact-rules page for deciding who should be able to reach you.",
+  "main": "dist/server.js",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "dev": "tsx watch src/server.ts",
+    "prestart": "npm run build",
+    "start": "node dist/server.js",
+    "test": "node --import tsx --test test/**/*.test.ts"
+  },
+  "author": "Sathwik Mamidi",
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "redis": "^6.1.0",
+    "xss": "^1.0.15"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.1.1",
+    "nodemon": "^3.1.14",
+    "tsx": "^4.23.0",
+    "typescript": "^7.0.2"
+  }
+}

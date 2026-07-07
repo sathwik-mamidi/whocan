@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whocan Contact Page</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/js/contact.js"></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="panel stack">
+        <div>
+          <p class="eyebrow">Whocan contact page</p>
+          <h1 id="username">Contact</h1>
+          <p>Check the profile context before sending a request.</p>
+        </div>
+
+        <div class="grid">
+          <article class="rule-box">
+            <h2>Who they are</h2>
+            <p id="bio"></p>
+          </article>
+          <article class="rule-box">
+            <h2>Who can contact them</h2>
+            <p id="rules"></p>
+          </article>
+        </div>
+      </section>
+
+      <form id="message-form" class="panel stack" aria-describedby="status">
+        <label>
+          Your name or context
+          <input id="from" name="from" maxlength="80" placeholder="Alex, hiring manager, indie founder..." />
+        </label>
+        <label>
+          Message
+          <textarea id="message" name="message" maxlength="1000" placeholder="Write a short contact request." required></textarea>
+        </label>
+        <div class="form-actions">
+          <button id="submit-message" type="submit">Send request</button>
+        </div>
+      </form>
+
+      <div id="status" class="status" role="status"></div>
+    </main>
+  </body>
+</html>

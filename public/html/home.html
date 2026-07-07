@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whocan</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/js/home.js"></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="intro">
+        <p class="eyebrow">Whocan</p>
+        <h1>Set the rules before people reach out.</h1>
+        <p>Publish a clear contact page with your context, boundaries, and the conversations you want to receive.</p>
+      </section>
+
+      <form id="profile-form" class="panel stack" aria-describedby="status">
+        <label>
+          Username
+          <input id="username" name="username" autocomplete="username" placeholder="sathwik" maxlength="32" required />
+        </label>
+
+        <div class="grid">
+          <label>
+            Who are you?
+            <textarea id="bio" name="bio" maxlength="600" placeholder="Founder, designer, backend engineer, student, writer..." required></textarea>
+          </label>
+
+          <label>
+            Who can contact you?
+            <textarea id="rules" name="rules" maxlength="600" placeholder="People building developer tools, hiring for infra roles, founders in Bengaluru..." required></textarea>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button id="submit-profile" type="submit">Create profile</button>
+          <div id="status" class="status" role="status"></div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

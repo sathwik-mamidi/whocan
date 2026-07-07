@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whocan Dashboard</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/js/dashboard.js"></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="panel stack">
+        <div>
+          <p class="eyebrow">Dashboard</p>
+          <h1 id="username">Whocan</h1>
+          <p>Your public page: <a id="public-url" href="#"></a></p>
+        </div>
+
+        <div class="grid">
+          <article class="rule-box">
+            <h2>Who you are</h2>
+            <p id="bio"></p>
+          </article>
+          <article class="rule-box">
+            <h2>Who can contact you</h2>
+            <p id="rules"></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel stack">
+        <div class="section-heading">
+          <h2>Recent contact requests</h2>
+          <p>Showing the latest 50 requests.</p>
+        </div>
+        <ul id="messages" class="message-list"></ul>
+        <div id="status" class="status" role="status"></div>
+      </section>
+    </main>
+  </body>
+</html>
